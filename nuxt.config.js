@@ -40,6 +40,9 @@ export default {
 	** Build configuration
 	*/
 	build: {
+		vendor: [
+			'axios'
+		],
 		/*
 		** You can extend webpack config here
 		*/
