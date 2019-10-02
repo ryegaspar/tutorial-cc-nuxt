@@ -20,7 +20,7 @@
         },
 
         async asyncData() {
-    		let response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    		let response = await axios.get('https://jsonplaceholder.typicode.com/posts');
 
             return {
     			posts: response.data
@@ -34,7 +34,5 @@
         //         }
         //     });
         // }
-
-
     }
 </script>
