@@ -1,7 +1,8 @@
 <template>
     <div class="post">
         <h1 class="post__title">
-            {{ post.title}}
+            <nuxt-link :to="{ name: 'posts-id', params: { id: post.id } }">{{ post.title }}</nuxt-link>
+            <!-- to get the name, simply look for the 'name' router.js in .nuxt folder -->
         </h1>
 
         <p>{{ post.body }}</p>
