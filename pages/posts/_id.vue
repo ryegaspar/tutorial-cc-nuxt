@@ -15,6 +15,12 @@
             }
         },
 
+        head() { //for dynamic titles, use this format
+    		return {
+    			title: this.post.title
+            }
+        },
+
         components: {
     		Post
         },
