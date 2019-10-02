@@ -33,7 +33,6 @@
     		return {
     			post: response.data
             }
-
         }
     }
 </script>

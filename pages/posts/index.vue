@@ -15,6 +15,8 @@
             }
         },
 
+        layout: 'posts',
+
         head: {
     		title: 'Posts'
         },
