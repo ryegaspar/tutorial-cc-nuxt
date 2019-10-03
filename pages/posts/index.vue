@@ -2,6 +2,7 @@
     <div>
         <h3>{{ posts.length }} {{ pluralize('post', posts.length) }} </h3>
         <post v-for="post in posts" :key="post.id" :post="post"></post>
+        <a href="" v-scroll-to="'body'">To Top</a>
     </div>
 </template>
 
