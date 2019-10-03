@@ -25,13 +25,18 @@
     		Post
         },
 
-    	async asyncData ( {params} ) {
+    	async asyncData ( { params, error } ) {
+    		try {
+				// console.log(params);
+				let response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
 
-    		// console.log(params);
-    		let response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
-
-    		return {
-    			post: response.data
+				return {
+					post: response.data
+				}
+			} catch (e) {
+    			error({
+                    statusCode: e.response.status
+                });
             }
         }
     }
