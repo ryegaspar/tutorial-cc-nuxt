@@ -30,7 +30,11 @@ export default {
 	*/
 	plugins: [
 		'@/plugins/mixins/pluralize',
-		'@/plugins/scrollTo'
+		'@/plugins/scrollTo',
+		{
+			src: '@/plugins/vueSelect',
+			ssr: false
+		}
 	],
 	/*
 	** Nuxt.js dev-modules
